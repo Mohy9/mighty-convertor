@@ -7,9 +7,11 @@ import SpeedIcon from '@material-ui/icons/Speed';
 const useStyles = makeStyles((theme) => ({
   label: {
     padding: theme.spacing(1),
+    marginBottom: theme.spacing(2),
     // backgroundColor: theme.palette.info.light,
     backgroundColor: '#FFE492',
     borderRadius: '6px',
+    textAlign: 'center',
   },
   icon: {
     marginRight: theme.spacing(3),
@@ -43,20 +45,22 @@ export function SpeedConverter() {
 
   return (
     <React.Fragment>
-      {/* <Grid container direction="row" alignItems="center">
+      <Grid
+        container
+        direction="row"
+        alignItems="center"
+        justify="center"
+        className={classes.label}
+      >
         <Grid item>
-          <SpeedIcon className={classes.icon} />
+          <SpeedIcon fontSize="large" className={classes.icon} />
         </Grid>
         <Grid item>
-          <Typography variant="h6" paragraph={true} className={classes.label}>
+          <Typography variant="h6">
             Catch me if you can using <strong>Speed</strong> measurements
           </Typography>
         </Grid>
-      </Grid> */}
-      <Typography variant="h6" paragraph={true} className={classes.label}>
-        Catch me if you can using <strong>Speed</strong> measurements
-      </Typography>
-
+      </Grid>
       <MeasurementField
         id="kph-number"
         label="KPH"

@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography } from '@material-ui/core';
+import { Typography, Grid } from '@material-ui/core';
 import MeasurementField from '../MeasurementField/MeasurementField';
+import WbSunnyIcon from '@material-ui/icons/WbSunny';
 
 const useStyles = makeStyles((theme) => ({
   label: {
     padding: theme.spacing(1),
+    marginBottom: theme.spacing(2),
+    // backgroundColor: theme.palette.info.light,
     backgroundColor: '#FFE492',
     borderRadius: '6px',
+    textAlign: 'center',
+  },
+  icon: {
+    marginRight: theme.spacing(3),
+    marginTop: '4px',
   },
 }));
 
@@ -38,9 +46,22 @@ export function TempConverter() {
 
   return (
     <React.Fragment>
-      <Typography variant="h6" paragraph={true} className={classes.label}>
-        What about <strong>Temperatures</strong>?
-      </Typography>
+      <Grid
+        container
+        direction="row"
+        alignItems="center"
+        justify="center"
+        className={classes.label}
+      >
+        <Grid item>
+          <WbSunnyIcon fontSize="large" className={classes.icon} />
+        </Grid>
+        <Grid item>
+          <Typography variant="h6">
+            What about <strong>Temperatures</strong>?
+          </Typography>
+        </Grid>
+      </Grid>
       <MeasurementField
         id="celsius-number"
         label="Celsius"

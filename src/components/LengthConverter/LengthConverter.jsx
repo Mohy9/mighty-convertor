@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography } from '@material-ui/core';
+import { Typography, Grid } from '@material-ui/core';
 import MeasurementField from '../MeasurementField/MeasurementField';
+import SquareFootIcon from '@material-ui/icons/SquareFoot';
 
 const useStyles = makeStyles((theme) => ({
   label: {
     padding: theme.spacing(1),
+    marginBottom: theme.spacing(2),
+    // backgroundColor: theme.palette.info.light,
     backgroundColor: '#FFE492',
     borderRadius: '6px',
+    textAlign: 'center',
+  },
+  icon: {
+    marginRight: theme.spacing(3),
   },
 }));
 
@@ -94,9 +101,22 @@ export function LengthConverter() {
 
   return (
     <React.Fragment>
-      <Typography variant="h6" paragraph={true} className={classes.label}>
-        Any <strong>Length</strong> can be converted here
-      </Typography>
+      <Grid
+        container
+        direction="row"
+        alignItems="center"
+        justify="center"
+        className={classes.label}
+      >
+        <Grid item>
+          <SquareFootIcon fontSize="large" className={classes.icon} />
+        </Grid>
+        <Grid item>
+          <Typography variant="h6">
+            Any <strong>Length</strong> can be converted here
+          </Typography>
+        </Grid>
+      </Grid>
       <MeasurementField
         id="centimeters-number"
         label="Centimeters"
