@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Grid } from '@material-ui/core';
 import MeasurementField from '../MeasurementField/MeasurementField';
-import SpeedIcon from '@material-ui/icons/Speed';
+import OpacityIcon from '@material-ui/icons/Opacity';
 
 const useStyles = makeStyles((theme) => ({
   label: {
@@ -64,7 +64,7 @@ export function LiquidConverter() {
         className={classes.label}
       >
         <Grid item>
-          <SpeedIcon fontSize="large" className={classes.icon} />
+          <OpacityIcon fontSize="large" className={classes.icon} />
         </Grid>
         <Grid item>
           <Typography variant="h6">
