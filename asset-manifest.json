@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/mighty-convertor/static/css/main.6514dfd6.chunk.css",
-    "main.js": "/mighty-convertor/static/js/main.4524e5fb.chunk.js",
-    "main.js.map": "/mighty-convertor/static/js/main.4524e5fb.chunk.js.map",
+    "main.js": "/mighty-convertor/static/js/main.8a271239.chunk.js",
+    "main.js.map": "/mighty-convertor/static/js/main.8a271239.chunk.js.map",
     "runtime-main.js": "/mighty-convertor/static/js/runtime-main.dc927d1c.js",
     "runtime-main.js.map": "/mighty-convertor/static/js/runtime-main.dc927d1c.js.map",
-    "static/js/2.06c75595.chunk.js": "/mighty-convertor/static/js/2.06c75595.chunk.js",
-    "static/js/2.06c75595.chunk.js.map": "/mighty-convertor/static/js/2.06c75595.chunk.js.map",
+    "static/js/2.53485ded.chunk.js": "/mighty-convertor/static/js/2.53485ded.chunk.js",
+    "static/js/2.53485ded.chunk.js.map": "/mighty-convertor/static/js/2.53485ded.chunk.js.map",
     "index.html": "/mighty-convertor/index.html",
     "static/css/main.6514dfd6.chunk.css.map": "/mighty-convertor/static/css/main.6514dfd6.chunk.css.map",
-    "static/js/2.06c75595.chunk.js.LICENSE.txt": "/mighty-convertor/static/js/2.06c75595.chunk.js.LICENSE.txt",
+    "static/js/2.53485ded.chunk.js.LICENSE.txt": "/mighty-convertor/static/js/2.53485ded.chunk.js.LICENSE.txt",
     "static/media/bg.d8ec5918.webp": "/mighty-convertor/static/media/bg.d8ec5918.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.dc927d1c.js",
-    "static/js/2.06c75595.chunk.js",
+    "static/js/2.53485ded.chunk.js",
     "static/css/main.6514dfd6.chunk.css",
-    "static/js/main.4524e5fb.chunk.js"
+    "static/js/main.8a271239.chunk.js"
   ]
 }
