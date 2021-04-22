@@ -17,6 +17,7 @@ import Headline from './components/Headline/Headline';
 import { LengthConverter } from './components/LengthConverter/LengthConverter';
 import { TempConverter } from './components/TempConverter/TempConverter';
 import { WeightConverter } from './components/WeightConverter/WeightConverter';
+import { LiquidConverter } from './components/LiquidConverter/LiquidConverter';
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -58,6 +59,9 @@ function App() {
               </Paper>
               <Paper elevation={3} className={classes.paper}>
                 <WeightConverter />
+              </Paper>
+              <Paper elevation={3} className={classes.paper}>
+                <LiquidConverter />
               </Paper>
             </Grid>
           </Grid>

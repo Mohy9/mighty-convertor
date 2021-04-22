@@ -21,7 +21,7 @@ const theme = createMuiTheme({
 export default function MeasurementField(props) {
   const classes = useStyles();
 
-  const { id, label, value, onChange } = props;
+  const { id, label, value, onChange, minusValueEnabled } = props;
   return (
     <ThemeProvider theme={theme}>
       <TextField
@@ -31,7 +31,7 @@ export default function MeasurementField(props) {
         onChange={onChange}
         type="number"
         className={classes.input}
-        InputProps={{ inputProps: { min: 0 } }}
+        InputProps={minusValueEnabled ? {} : { inputProps: { min: 0 } }}
         InputLabelProps={{
           shrink: true,
         }}

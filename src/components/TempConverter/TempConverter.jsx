@@ -67,18 +67,21 @@ export function TempConverter() {
         label="Celsius"
         value={celsiusValue}
         onChange={handleCelsiusTempChange}
+        minusValueEnabled
       />
       <MeasurementField
         id="fanhrenheit-number"
         label="Fahrenheit"
         value={fahrenheitValue}
         onChange={handleFahrenheitTempChange}
+        minusValueEnabled
       />
       <MeasurementField
         id="kelvin-number"
         label="Kelvin"
         value={kelvinValue}
         onChange={handleKelvinTempChange}
+        minusValueEnabled
       />
     </React.Fragment>
   );
