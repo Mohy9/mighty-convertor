@@ -4,8 +4,15 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   headline: {
-    marginBottom: theme.spacing(6),
     color: '#393939',
+    [theme.breakpoints.down('md')]: {
+      paddingTop: theme.spacing(4),
+      marginBottom: theme.spacing(3),
+    },
+    [theme.breakpoints.up('md')]: {
+      paddingTop: theme.spacing(6),
+      marginBottom: theme.spacing(6),
+    },
   },
 }));
 

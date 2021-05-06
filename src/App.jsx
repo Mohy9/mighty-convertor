@@ -33,7 +33,6 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     padding: theme.spacing(3),
     marginBottom: theme.spacing(6),
-    // backgroundColor: theme.palette.primary.light
   },
 }));
 
@@ -49,10 +48,10 @@ function App() {
             <Grid item sm={2}></Grid>
             <Grid item xs={12} sm={8}>
               <Paper elevation={3} className={classes.paper}>
-                <SpeedConverter />
+                <LengthConverter />
               </Paper>
               <Paper elevation={3} className={classes.paper}>
-                <LengthConverter />
+                <SpeedConverter />
               </Paper>
               <Paper elevation={3} className={classes.paper}>
                 <TempConverter />

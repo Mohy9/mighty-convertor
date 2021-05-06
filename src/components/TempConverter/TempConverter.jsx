@@ -8,14 +8,24 @@ const useStyles = makeStyles((theme) => ({
   label: {
     padding: theme.spacing(1),
     marginBottom: theme.spacing(2),
-    // backgroundColor: theme.palette.info.light,
     backgroundColor: '#FFE492',
     borderRadius: '6px',
     textAlign: 'center',
+    [theme.breakpoints.down('xs')]: {
+      flexDirection: 'column',
+    },
+    [theme.breakpoints.up('sm')]: {
+      flexDirection: 'row',
+    },
   },
   icon: {
-    marginRight: theme.spacing(3),
     marginTop: '4px',
+    [theme.breakpoints.down('xs')]: {
+      marginRight: theme.spacing(0),
+    },
+    [theme.breakpoints.up('sm')]: {
+      marginRight: theme.spacing(3),
+    },
   },
 }));
 
